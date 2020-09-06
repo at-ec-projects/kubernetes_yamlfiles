@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: ridersapppod
+  labels:
+    app: ridersapp
+spec: 
+  containers:
+  - name: ridersappcontainer
+    image: atecprojects/riders-application:4
+    ports:
+    - containerPort: 9980

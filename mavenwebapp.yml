@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: mavenwebapppod
+  labels:
+    app: mavenwebapp
+spec: 
+  containers:
+  - name: mavenwebappcontainer
+    image: atecprojects/maven-web-application:12
+    ports:
+    - containerPort: 9980
